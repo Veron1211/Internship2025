@@ -238,18 +238,6 @@ async def detect(image: UploadFile = File(...)):
         logger.error(f"Error during processing: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Internal Server Error: {str(e)}")
 
-@app.post("/button")
-async def button_event(req: Request):
-    data = await req.json()
-    print("Button event:", data)
-    return {"status": "ok"}
-
-@app.post("/rfid")
-async def rfid_event(req: Request):
-    data = await req.json()
-    print("RFID scanned:", data)
-    return {"status": "ok"}
-
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)

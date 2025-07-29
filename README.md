@@ -31,10 +31,23 @@ Clone the repo:
 git clone https://github.com/Veron1211/Internship2025.git
 ```
 
+Create new Conda environment:
+```bash
+conda create -n your-env-name python=3.9
+```
+
+Activate the environment:
+```bash
+conda activate your-env-name
+```
+
 Install dependencies with pip:
 ```bash
 pip install -r requirements.txt
 ```
+
+Download the raw pre-trained models in the `assets` directory:
+https://github.com/yinguobing/head-pose-estimation.git
 
 ## Running
 
