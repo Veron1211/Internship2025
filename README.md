@@ -53,7 +53,7 @@ https://github.com/yinguobing/head-pose-estimation.git
 
 ### FastAPI
 ```bash
-uvicorn combined_api:app --reload
+uvicorn combined_api:app --reload --port 8001
 ```
 
 ### Client
