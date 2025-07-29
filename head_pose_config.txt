@@ -1,0 +1,7 @@
+left_threshold=15
+right_threshold=-15
+leftright_threshold_for_side=5
+left_extreme=40
+right_extreme=-40
+left_ratio=0.25
+right_ratio=0.25
